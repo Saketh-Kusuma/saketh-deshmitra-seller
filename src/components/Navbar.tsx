@@ -5,25 +5,27 @@ import { FiMenu, FiX } from 'react-icons/fi'
 import deshmitraLogo from '../assets/deshmitraLogo.png'
 import deshmitraLogoBigScreen from '../assets/deshmitraLogo.png'
 
-const navLinks = ['Start Selling', 'Catalog', 'Orders', 'Grow', 'Support']
+const navLinks:string[] = ['Start Selling', 'Catalog', 'Orders', 'Grow', 'Support']
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <nav className="bg-zinc-100 shadow-md w-full">
-      <div className=" mx-auto flex items-center justify-between xl:justify-between px-4 sm:px-6 lg:px-8 h-16 md:h-32">
+      <div className=" mx-auto flex  items-center justify-between xl:justify-between px-4 sm:px-6 lg:px-8 h-16 md:h-32">
         {/* Logo */}
         <div className="text-2xl  font-bold p-1 text-[#003956]">
       <img src={deshmitraLogo} className='h-full block md:hidden w-full' alt="" />
-      <img src={deshmitraLogoBigScreen} className='h-full hidden md:block w-full' alt="" />
+      <img style={{height:'25px'}} src={deshmitraLogoBigScreen}  className='hidden md:block h-full w-full' alt="" />
+
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex bg-red-100 md:justify-center md:items-center md:text-lg xxl:text-xl md:space-x-5  text-[#035884]
-        lg:space-x-12">
+        <ul className="hidden md:flex  md:justify-center md:items-center md:text-[16px] xmd:text-[18px] lg:text-[18px]
+         xxl:text-xl md:space-x-4  xmd:space-x-5  lg:space-x-12">
           {navLinks.map((link) => (
-            <li style={{lineHeight:'100%'}} key={link} className="text-[#035884] font-semibold hover:text-[#035884] transition">
+            <li style={{lineHeight:'100%'}} key={link} className="text-[#035884]
+             font-semibold hover:text-[#035884] transition">
               <a href={`#${link.replace(/\s+/g, '').toLowerCase()}`}>
                 {link}
               </a>

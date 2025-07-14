@@ -104,12 +104,12 @@ const DeshMitraLanding = () => {
             Start your online business today. List your products, connect with crores of customers, and grow your brand across the country.
           </p>
           <div className="flex flex-row gap-3 xs:gap-5 lg:mt-5 ">
-            <button className="px-2 xs:px-3 py-2 md:px-6 md:py-2 lg:py-3 2xl:py-3 2xl:px-28  bg-gradient-to-r
+            <button className="px-2 xs:px-3 cursor-pointer py-2 md:px-6 md:py-2 lg:py-3 2xl:py-3 2xl:px-28  bg-gradient-to-r
              from-orange-400 to-orange-600 text-white font-semibold text-[15px] rounded-lg shadow-lg lg:w-1/2
               hover:from-orange-500 hover:to-orange-700 transition">
               Start Selling Now
             </button>
-            <button className="px-2 xs:px-3 py-2 md:px-6 md:py-2 lg:py-3 2xl:py-3 2xl:px-28 border-2 text-[15px] lg:w-1/2
+            {/* <button className="px-2 xs:px-3 py-2 md:px-6 md:py-2 lg:py-3 2xl:py-3 2xl:px-28 border-2 text-[15px] lg:w-1/2
              border-orange-500 text-orange-500 flex justify-center items-center 
              font-semibold rounded-lg hover:bg-orange-500 hover:text-white transition">
              
@@ -120,7 +120,30 @@ const DeshMitraLanding = () => {
             >
               <path d="M8 5v14l11-7z" />
             </svg> Watch Demo
-            </button>
+            </button> */}
+
+
+<button className="group cursor-pointer relative overflow-hidden px-2 xs:px-3 py-2 md:px-6 md:py-2 lg:py-3 2xl:py-3 
+2xl:px-28 border-2 text-[15px] lg:w-1/2
+  border-orange-500 text-orange-500 flex justify-center items-center font-semibold rounded-lg  transition">
+  <span className="relative flex items-center w-full justify-center">
+    <span className="transition-all duration-500 md:group-hover:pr-8">Watch Demo</span>
+    
+    <span
+      className="absolute hidden lg:block lg:-left-2 transition-all duration-1000 md:group-hover:left-auto 
+      md:group-hover:right-2"
+      style={{ top: '50%', transform: 'translateY(-50%)' }}
+    >
+      <svg
+        className="w-5 h-5 hidden sm:block"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M8 5v14l11-7z" />
+      </svg>
+    </span>
+  </span>
+</button>
           </div>
         </div>
 

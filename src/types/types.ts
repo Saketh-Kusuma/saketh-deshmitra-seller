@@ -58,10 +58,11 @@ export type TTypeSteps = {
 
 
 export type Benefit = {
-  icon: React.ReactNode 
-  title: string
-  description: string
-}
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  className: string;
+};
 
 
 declare module 'swiper/css';

@@ -12,17 +12,28 @@ const benefits: Benefit[] = [
     icon: icon1,
     title: 'Advanced Analytics',
     description: 'Real-time insights and reporting',
+    className:''
   },
   {
     icon: icon2,
     title: 'Marketing Tools',
     description: 'Boost your sales with our tools',
+        className:''
   },
   {
     icon: icon3,
     title: 'Secure Platform',
     description: 'Bank-level security for all transactions',
+        className:''
   },
+  {
+
+    icon:icon2,
+    title:'Plus Many More Benefits',
+    description: 'Explore additional features and services',
+        className:'hidden sm:flex sm:flex-col sm:justify-center sm:items-center lg:hidden'
+
+  }
 ]
 
 export default function MoreBenefits() {
@@ -38,9 +49,9 @@ export default function MoreBenefits() {
       {benefits.map((b, i) => (
   <div
     key={i}
-    className="flex flex-col items-center text-center space-y-4"
+    className={`flex flex-col ${b.className} items-center text-center space-y-4`}
   >
-    <div className="p-4 rounded-full">
+    <div className="p-4 rounded-full text-center">
       <img
         src={b.icon as string}
         alt={b.title}

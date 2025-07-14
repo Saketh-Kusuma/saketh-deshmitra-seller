@@ -1,27 +1,18 @@
-import Accordion from "./components/Accordion";
-import Benefits from "./components/Benefits";
-import FeatureCarousel from "./components/FeatureCarousel";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import PopularCategories from "./components/PopularCategories";
-import StepsSection from "./components/StepsSection";
-import TestimonialSection from "./components/TestimonialsSection";
-import WhySell from "./components/WhySell";
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import OTPPage from './pages/OTPPage'
+import Login from './pages/Login'
+import Home from './pages/Home'
 
-function App() {
+const App = () => {
   return (
-    <div className="flex mx-0  min-h-screen max-w-screen overflow-x-hidden flex-col items-center justify-center">
-      <Navbar />
-      <Hero />
-      <WhySell />
-      <Benefits />
-      <Accordion />
-      <FeatureCarousel />
-      <StepsSection />
-      <PopularCategories />
-      <TestimonialSection />
-    </div>
-  );
+  <Routes>
+      {/* ...other routes... */}
+      <Route path='/' element={<Home />}/>
+      <Route path="/OTPPage" element={<OTPPage />} />
+      <Route path='/login' element={<Login />}/>
+    </Routes>
+  )
 }
 
 export default App;

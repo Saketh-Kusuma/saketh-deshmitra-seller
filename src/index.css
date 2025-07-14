@@ -11,10 +11,21 @@
 
 
 @theme {
+  
   --breakpoint-xs: 30rem;
   --breakpoint-xm:35rem;
+  --breakpoint-xlg:75rem;
+  --breakpoint-lg:64rem;
+
+  --breakpoint-sxxl:84.375rem;
   --breakpoint-xxl:90rem;
   --breakpoint-sxs:25rem;
+  --breakpoint-2sxs:26.25rem;
+  --breakpoint-md:45rem;
+  /* 816px = 51rem */
+  --breakpoint-xmd:51rem;  
+  /* 900px = 56.25rem */
+  --breakpoint-xxmd:56.25rem; 
 }
 
 @theme inline {

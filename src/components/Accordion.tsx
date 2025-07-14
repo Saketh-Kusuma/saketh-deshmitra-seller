@@ -4,7 +4,7 @@ import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 // import icon1 from '../assets/icons/icon (1).png';
 import { MessageCircle } from "lucide-react";
 import { Mail } from "lucide-react";
-import { Button } from "./ui/button";
+// import { Button } from "./ui/button";
 import type { TAccordion } from "@/types/types";
 
 

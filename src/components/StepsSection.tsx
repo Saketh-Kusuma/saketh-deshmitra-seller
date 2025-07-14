@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Mail, Lightbulb, Clock, Search, TrendingUp } from "lucide-react";
 import type {TTypeSteps} from '../types/types'
 
